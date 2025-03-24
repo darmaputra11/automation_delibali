@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Login with Guest Mode</description>
+   <name>TC003_Login_LoginWithGuestMode</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a39e397f-4994-4bd2-9150-8c2dadce3736</testCaseGuid>
+</TestCaseEntity>

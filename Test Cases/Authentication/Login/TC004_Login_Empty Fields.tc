@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check error message when field is empty</description>
+   <name>TC004_Login_Empty Fields</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>419a1e70-42e4-4616-ba77-b4f92c9b0ab3</testCaseGuid>
+</TestCaseEntity>
