@@ -21,4 +21,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class RegisterObject {
+	static TestObject fullnamefieldRegister = findTestObject('Object Repository/Authentication/Register/Register_Input_FullName')
+	static TestObject emaildfieldRegister = findTestObject('Object Repository/Authentication/Register/Register_Input_Email')
+	static TestObject phonenumberfieldRegister = findTestObject('Object Repository/Authentication/Register/Register_Input_PhoneNumber')
+	static TestObject malegenderRegister = findTestObject('Object Repository/Authentication/Register/Register_Select_Male')
+	static TestObject femalegenderRegister = findTestObject('Object Repository/Authentication/Register/Register_Select_Female')
+	static TestObject birthdaypickerRegister = findTestObject('Object Repository/Authentication/Register/Register_DatePicker_Birthday')
+	static TestObject nationalitypickerRegister = findTestObject('Object Repository/Authentication/Register/Register_Picker_Nationality')
+	static TestObject occupationpickerRegister = findTestObject('Object Repository/Authentication/Register/Register_Picker_Occupation')
+	static TestObject familystructurepickerRegister = findTestObject('Object Repository/Authentication/Register/Register_Picker_FamilyStructure')
+	static TestObject imagepickerRegister = findTestObject('Object Repository/Authentication/Register/Register_Button_ImagePicker')
+	static TestObject backarrowRegisterRegister = findTestObject('Object Repository/Authentication/Register/Register_Button_BackArrow')
+	static TestObject camerabottomsheetRegister = findTestObject('Object Repository/Authentication/Register/Register_BottomSheet_Camera')
+	static TestObject galerybottomsheetRegister = findTestObject('Object Repository/Authentication/Register/Register_BottomSheet_Galery')
+	static TestObject nextbuttonRegister = findTestObject('Object Repository/Authentication/Register/Register_Button_Next')
+	
 }

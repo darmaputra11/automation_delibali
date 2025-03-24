@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import utils.CommonMethods as CommonMethods
-import utils.LoginObject
+import initialsObject.LoginObject
 
 // Buat instance dari CommonMethods
 CommonMethods cm = new CommonMethods()
