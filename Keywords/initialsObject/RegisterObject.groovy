@@ -35,5 +35,4 @@ public class RegisterObject {
 	static TestObject camerabottomsheetRegister = findTestObject('Object Repository/Authentication/Register/Register_BottomSheet_Camera')
 	static TestObject galerybottomsheetRegister = findTestObject('Object Repository/Authentication/Register/Register_BottomSheet_Galery')
 	static TestObject nextbuttonRegister = findTestObject('Object Repository/Authentication/Register/Register_Button_Next')
-	
 }

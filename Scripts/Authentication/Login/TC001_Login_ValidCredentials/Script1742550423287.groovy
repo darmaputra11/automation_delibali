@@ -22,6 +22,12 @@ import initialsObject.LoginObject
 // Buat instance dari CommonMethods
 CommonMethods cm = new CommonMethods()
 
+//For change account quickly, just change value following id on test data (LoginCredentials)
+int idAccount = 1
+TestData data = findTestData('Data Files/Auth/LoginCredentials')
+String phonenumber = data.getValue('phonenumber', idAccount)
+String password = data.getValue('password', idAccount)
+
 
 //Open App
 cm.openAppDirectly()
@@ -30,12 +36,12 @@ cm.openAppDirectly()
 Mobile.verifyElementExist(LoginObject.phonenumberField, 0)
 
 //Set Name Field
-Mobile.setText(LoginObject.phonenumberField, '83119349227', 0)
+Mobile.setText(LoginObject.phonenumberField, phonenumber, 0)
 
 Mobile.hideKeyboard()
 
 //Set Password
-Mobile.setText(LoginObject.passwordField, 'password', 0)
+Mobile.setText(LoginObject.passwordField, password, 0)
 
 Mobile.hideKeyboard()
 

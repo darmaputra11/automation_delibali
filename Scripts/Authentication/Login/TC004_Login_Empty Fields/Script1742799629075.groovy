@@ -26,12 +26,18 @@ CommonMethods cm = new CommonMethods()
 //Open App
 cm.openAppDirectly()
 
+//For change account quickly
+int idAccount = 1
+TestData data = findTestData('Data Files/Auth/LoginCredentials')
+String phonenumber = data.getValue('phonenumber', idAccount)
+String password = data.getValue('password', idAccount)
+
 //Verify already on Login page
 Mobile.waitForElementPresent(LoginObject.phonenumberField, 0)
 
 //Filled all form
-Mobile.setText(LoginObject.phonenumberField, '83119349227', 0)
-Mobile.setText(LoginObject.passwordField, 'password', 0)
+Mobile.setText(LoginObject.phonenumberField, phonenumber, 0)
+Mobile.setText(LoginObject.passwordField, password, 0)
 Mobile.hideKeyboard()
 
 //Clear field, Check Error & filled again
@@ -39,18 +45,21 @@ Mobile.clearText(LoginObject.phonenumberField, 0)
 boolean phonenumberError = Mobile.verifyElementExist(LoginObject.phonenumberError, 5)
 assert phonenumberError == true : "Error phone number not appear!"
 Mobile.tap(LoginObject.loginButton, 0)
-Mobile.setText(LoginObject.phonenumberField, '83119349227', 0)
+Mobile.setText(LoginObject.phonenumberField, phonenumber, 0)
 Mobile.hideKeyboard()
 
 Mobile.clearText(LoginObject.passwordField, 0)
 boolean passwordError = Mobile.verifyElementExist(LoginObject.passwordError, 5)
 assert passwordError == true : "Error password not appear!"
 Mobile.tap(LoginObject.loginButton, 0)
-Mobile.setText(LoginObject.passwordField, 'password', 0)
+Mobile.setText(LoginObject.passwordField, password, 0)
 Mobile.hideKeyboard()
 
 // Click Login
 Mobile.tap(LoginObject.loginButton, 0)
+
+//Wait until Homepage
+Mobile.waitForElementPresent(findTestObject('Object Repository/Homepage/Homepage_Title_Category'), 0)
 
 //Close App
 Mobile.closeApplication()
