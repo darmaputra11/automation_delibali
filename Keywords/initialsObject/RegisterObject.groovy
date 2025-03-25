@@ -35,4 +35,18 @@ public class RegisterObject {
 	static TestObject camerabottomsheetRegister = findTestObject('Object Repository/Authentication/Register/Register_BottomSheet_Camera')
 	static TestObject galerybottomsheetRegister = findTestObject('Object Repository/Authentication/Register/Register_BottomSheet_Galery')
 	static TestObject nextbuttonRegister = findTestObject('Object Repository/Authentication/Register/Register_Button_Next')
+	static TestObject selectBottomSheet = findTestObject('Object Repository/Authentication/Register/Register_BottomSheet_Nationality(Indonesia)')
+	static TestObject passwordPage = findTestObject('Object Repository/Authentication/Register/Register_Password_Page')
+	static TestObject passwordField = findTestObject('Object Repository/Authentication/Register/Register_Password_Field')
+	static TestObject repasswordField = findTestObject('Object Repository/Authentication/Register/Register_Repassword_Field')
+	static TestObject passwordCheckbox = findTestObject('Object Repository/Authentication/Register/Register_Password_Checkbox')
+	static TestObject passwordTerms = findTestObject('Object Repository/Authentication/Register/Register_Password_Terms')
+	static TestObject passwordSubmitButton = findTestObject('Object Repository/Authentication/Register/Register_Password_Next')
+	static TestObject selectmethodPage = findTestObject('Object Repository/Authentication/Register/Register_Method_Page')
+	static TestObject selectemailMethod = findTestObject('Object Repository/Authentication/Register/Register_Method_SelectMethod')
+	static TestObject otpPage = findTestObject('Object Repository/Authentication/Register/Register_OTP_Title')
+	static TestObject otpField = findTestObject('Object Repository/Authentication/Register/Register_OTP_Input')
+	static TestObject otpSubmit = findTestObject('Object Repository/Authentication/Register/Register_OTP_Submit')
+	static TestObject otpResend = findTestObject('Object Repository/Authentication/Register/Register_OTP_Resend')
+	
 }
