@@ -48,5 +48,15 @@ public class RegisterObject {
 	static TestObject otpField = findTestObject('Object Repository/Authentication/Register/Register_OTP_Input')
 	static TestObject otpSubmit = findTestObject('Object Repository/Authentication/Register/Register_OTP_Submit')
 	static TestObject otpResend = findTestObject('Object Repository/Authentication/Register/Register_OTP_Resend')
-	
+	static TestObject registeraddressButton = findTestObject('Object Repository/Authentication/Register/Register_ButtonSuccess_RegisterAddress')
+	static TestObject skipsuccessButton = findTestObject('Object Repository/Authentication/Register/Register_Success_Skip')
+	static TestObject registeraddresspage = findTestObject('Object Repository/Authentication/Register/Register_Map_Address')
+	static TestObject addresstitlefield = findTestObject('Object Repository/Authentication/Register/Register_Address_Titlefield')
+	static TestObject addressskipbutton = findTestObject('Object Repository/Authentication/Register/Register_Address_SkipButton')
+	static TestObject addressfield = findTestObject('Object Repository/Authentication/Register/Register_Address_setAddressField')
+	static TestObject addressselectprovincePicker = findTestObject('Object Repository/Authentication/Register/Register_Address_SelectProvincePicker')
+	static TestObject addressprovincepicker = findTestObject('Object Repository/Authentication/Register/Register_Address_Provicepicker')
+	static TestObject addressmapPicker = findTestObject('Object Repository/Authentication/Register/Register_Address_Mappicker')
+	static TestObject addresssubmitButton = findTestObject('Object Repository/Authentication/Register/Register_Address_AddButton')
+	static TestObject getaddressDetail = findTestObject('Object Repository/Authentication/Register/Register_Map_GetAddressDetail')
 }
